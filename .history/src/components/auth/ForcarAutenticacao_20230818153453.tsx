@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image
 import router from 'next/router'
 import loading from '../../../public/images/loading.gif'
 import useAuth from '../../data/hook/useAuth'
@@ -32,7 +32,7 @@ export default function ForcarAutenticacao(props) {
             <div className={`
                 flex justify-center items-center h-screen
             `}>
-                <Image alt='loading' src={loading} />
+                < src={loading} />
             </div>
         )
     }

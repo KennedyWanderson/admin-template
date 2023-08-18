@@ -21,7 +21,7 @@ export default function MenuItem(props: MenuItemProps) {
                 <span className={`text-xs font-light`}>
                     {props.texto}
                 </span>
-            </div>
+            </Link>
         )
     }
     return (

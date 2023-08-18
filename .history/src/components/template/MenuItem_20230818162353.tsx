@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import InternalLink from 'I'; // Importe o componente InternalLink
 
 interface MenuItemProps {
     texto: string
@@ -11,7 +11,7 @@ interface MenuItemProps {
 export default function MenuItem(props: MenuItemProps) {
     function renderizarLink() {
         return (
-            <div className={`
+            <InternalLink url={props.url} className={`
                     flex flex-col justify-center items-center
                     h-20 w-20
                     dark:text-gray-200
@@ -21,21 +21,12 @@ export default function MenuItem(props: MenuItemProps) {
                 <span className={`text-xs font-light`}>
                     {props.texto}
                 </span>
-            </div>
+            </InternalLink>
         )
     }
     return (
-        <li onClick={props.onClick} className={`http://localhost:3000/
-            hover:bg-gray-100 dark:hover:bg-gray-800
-            cursor-pointer
-        `}>
-            {props.url ? (
-                <Link href={props.url}>
-                    {renderizarLink()}
-                </Link>
-            ) : (
-                renderizarLink()
-            )}
+        <li onClick={props.onClick} className={`hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer`}>
+            {renderizarLink()}
         </li>
     )
 }

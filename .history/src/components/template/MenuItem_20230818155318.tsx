@@ -11,17 +11,17 @@ interface MenuItemProps {
 export default function MenuItem(props: MenuItemProps) {
     function renderizarLink() {
         return (
-            <div className={`
+            <Link  className={`
                     flex flex-col justify-center items-center
                     h-20 w-20
                     dark:text-gray-200
                     ${props.className}
-                `}>
+                `} legacyBehavior>
                 {props.icone}
                 <span className={`text-xs font-light`}>
                     {props.texto}
                 </span>
-            </div>
+            </Link>
         )
     }
     return (

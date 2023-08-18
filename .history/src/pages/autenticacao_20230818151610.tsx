@@ -32,11 +32,11 @@ export default function Autenticacao() {
 
     return (
         <div className="flex h-screen items-center justify-center">
-            <div className="hidden md:block md:w-1/1 lg:w-2/1">
+            <div className="hidden md:block md:w-1/2 lg:w-2/3">
                 <img 
                     src="/images/logo_slogam.png"
                     alt="Imagem da Tela de Autenticação"
-                    className="h-screen w-full object-cover" />
+                    className="h-screen w-f object-cover" />
             </div>
             <div className="m-10 w-full md:w-1/2 lg:w-1/3">
                 <h1 className={`text-3xl font-bold mb-5`}>

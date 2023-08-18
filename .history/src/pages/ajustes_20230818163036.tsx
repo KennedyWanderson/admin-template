@@ -4,7 +4,7 @@ export default function Ajustes() {
   return (
     <Layout titulo="Ajustes & Configurações" 
       subtitulo="Personalize o sistema por aqui!">
-      <h3>!!!!</h3>
+      <h3>C!!!!</h3>
     </Layout>
   )
 }
