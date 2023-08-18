@@ -1,0 +1,11 @@
+import Layout from '../components/template/Layout'
+import React from 'react'
+
+export default function Ajustes() {
+  return (
+    <Layout titulo="Ajustes & Configurações" 
+      subtitulo="Personalize o sistema por aqui!">
+      <h3>Test!!!!</h3>
+    </Layout>
+  )
+}
